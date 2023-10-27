@@ -1,5 +1,7 @@
 # ARK: Survival Ascended Server
 
+> THIS IS A WORK IN PROGRESS AND NOT FUNCTIONING YET
+
 This Dockerfile is designed to set up a dedicated server in a Docker container on TrueNAS Scale primarily.
 
 ## Setting Environment Variables
