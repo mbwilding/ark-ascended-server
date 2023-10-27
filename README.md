@@ -14,7 +14,8 @@ You can customize your server by setting the appropriate environment variables. 
 - **WORLD_TYPE**: Defines the world type (default: `TheIsland_WP`).
 - **MAX_PLAYERS**: Max number of players (default: `20`).
 - **STEAM_PORT**: Steam port (default: `27015`).
-- **QUERY_PORT**: Query port (default: `27017`).
+- **QUERY_PORT**: Query port (default: `27016`).
+- **RCON_PORT**: RCON port (default: `27017`).
 - **SERVER_ADMIN_PASSWORD**: Admin password (default: `letmein`).
 - **NO_BATTLEYE**: Disable BattleEye (default: `True`).
 - **SERVER_PASSWORD**: (Optional) Server password.

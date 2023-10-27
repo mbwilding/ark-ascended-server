@@ -14,6 +14,7 @@ CMD_START="${CMD_START} ${WORLD_TYPE}"
 [ -n "$MAX_PLAYERS" ] && CMD_START="${CMD_START}?MaxPlayers=${MAX_PLAYERS}"
 [ -n "$STEAM_PORT" ] && CMD_START="${CMD_START}?Port=${STEAM_PORT}"
 [ -n "$QUERY_PORT" ] && CMD_START="${CMD_START}?QueryPort=${QUERY_PORT}"
+[ -n "$RCON_PORT" ] && CMD_START="${CMD_START}?RCONPort=${RCON_PORT}"
 
 # Append the settings based on - parameters
 [ "$NO_BATTLEYE" == "True" ] && CMD_START="${CMD_START} -NoBattlEye"

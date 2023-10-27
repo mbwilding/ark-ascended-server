@@ -32,7 +32,8 @@ ENV NO_BATTLEYE=True
 
 # Ports
 ENV STEAM_PORT=27015
-ENV QUERY_PORT=27017
+ENV QUERY_PORT=27016
+ENV RCON_PORT=27017
 
 # Switch to 'apps' user for the container runtime
 USER apps
@@ -43,10 +44,6 @@ ENV WINEPREFIX=/persistence/.wine
 
 # Prepare wine
 RUN wineboot --init && \
-    wineboot -u && \
-    wget https://dl.winehq.org/wine/wine-mono/8.1.0/wine-mono-8.1.0-x86.msi && \
-    wine64 msiexec /i wine-mono-8.1.0-x86.msi /qn && \
-    rm wine-mono-8.1.0-x86.msi && \
     WINEPREFIX=/persistence/.wine winetricks -q vcrun2022
 
 # Use the startup script as the command
