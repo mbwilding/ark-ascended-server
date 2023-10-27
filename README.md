@@ -27,8 +27,8 @@ You can customize your server by setting the appropriate environment variables. 
 
 Make sure to port expose and forward;
 - STEAM_PORT
-- STEAM_PORT + 1
 - QUERY_PORT
+- RCON_PORT
 
 ## Persistence
 
