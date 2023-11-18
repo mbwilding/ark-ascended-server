@@ -43,8 +43,7 @@ ENV WINEDEBUG=-all
 ENV WINEPREFIX=/persistence/.wine
 
 # Prepare wine
-RUN wineboot --init && \
-    WINEPREFIX=/persistence/.wine winetricks -q --force vcrun2019
+RUN wineboot --init
 
 # Use the startup script as the command
 CMD ["/start_server.sh"]
