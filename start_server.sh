@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Log in to Steam anonymously and download the dedicated server
-/opt/steamcmd/steamcmd.sh +force_install_dir /persistence +@sSteamCmdForcePlatformType windows +login $STEAM_USERNAME $STEAM_PASSWORD +app_update 2430930 validate +quit
+/opt/steamcmd/steamcmd.sh +force_install_dir /persistence +@sSteamCmdForcePlatformType windows +login anonymous +app_update 2430930 validate +quit
 
 # Start command, preparing for command building
 CMD_START="wine64 /persistence/ShooterGame/Binaries/Win64/ArkAscendedServer.exe"

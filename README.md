@@ -8,8 +8,6 @@ This Dockerfile is designed to set up a dedicated server in a Docker container o
 
 You can customize your server by setting the appropriate environment variables. Here are the variables available:
 
-- **STEAM_USERNAME**: Steam username that owns the game.
-- **STEAM_PASSWORD**: Steam password.
 - **SERVER_NAME**: Server name to display in the server browser (default: `ArkContainer`).
 - **WORLD_TYPE**: Defines the world type (default: `TheIsland_WP`).
 - **MAX_PLAYERS**: Max number of players (default: `20`).
