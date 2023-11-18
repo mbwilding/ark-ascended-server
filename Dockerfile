@@ -44,7 +44,7 @@ ENV WINEPREFIX=/persistence/.wine
 
 # Prepare wine
 RUN wineboot --init && \
-    WINEPREFIX=/persistence/.wine winetricks -q vcrun2022
+    WINEPREFIX=/persistence/.wine winetricks -q --force vcrun2019
 
 # Use the startup script as the command
 CMD ["/start_server.sh"]
